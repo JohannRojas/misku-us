@@ -36,3 +36,7 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+
+# supabase
+.supabase
+lib/supabase.ts
