@@ -1,5 +1,5 @@
 import { cn } from '@/helpers/helpers'
-import { View, Text, ActivityIndicator } from 'react-native';
+import { View, ActivityIndicator } from 'react-native';
 
 interface Props extends React.ComponentProps<typeof ActivityIndicator> {
   size?: number | "small" | "large" | undefined

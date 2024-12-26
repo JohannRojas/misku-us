@@ -1,6 +1,6 @@
 import { ScreenWrapper } from '@/components/ScreenWrapper'
 import { useRouter } from 'expo-router'
-import { Button, Text, View } from 'react-native'
+import { Button, Text } from 'react-native'
 
 export default function Home() {
 

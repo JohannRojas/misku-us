@@ -3,8 +3,11 @@ import { Image, Pressable, Text, View } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
 import { Button } from '@/components/Button'
 import { cn } from '@/helpers/helpers'
+import { useRouter } from 'expo-router'
 
 export default function Welcome() {
+
+  const router = useRouter()
 
   return (
     <ScreenWrapper className='text-white'>
@@ -18,13 +21,13 @@ export default function Welcome() {
           <Text className='text-xl font-bold text-center px-[10%] text-primary'>Para manejar nuestros gastos</Text>
         </View>
         {/* Footer */}
-        <View className='w-full gap-8 shadow'>
+        <View className='w-full gap-8 '>
           <Button 
             title="Comencemos" 
             textStyle={cn('text-white font-bold text-center')}
             className={'mx-[3%]'}
             hasShadow
-            onPress={() => { }} />
+            onPress={() => router.push('/(tabs)')} />
 
             <View className='flex-row items-center justify-center gap-5'>
               <Text className='text-base text-center'>

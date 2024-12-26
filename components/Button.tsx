@@ -15,7 +15,7 @@ export const Button = ({
   title = '',
   textStyle,
   onPress = () => { },
-  loading = true,
+  loading = false,
   hasShadow 
 }: Props) => {
 
